@@ -12,8 +12,8 @@ import io.cucumber.testng.CucumberOptions;
 
 
 //@RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/feature/Salesforce.feature"
-,glue ="stepDefinition", publish = true, dryRun = false, monochrome = true)
+@CucumberOptions(features = "src/test/java/com/salesforce/feature/Salesforce.feature"
+,glue ="com/salesforce/stepDefinition", publish = true, dryRun = false, monochrome = true)
 public class Salesforce_Runner extends Salesforce_baseclass {
 
 

@@ -1,4 +1,4 @@
-package stepDefinition;
+package com.salesforce.stepDefinition;
 
 import org.openqa.selenium.WebDriver;
 
