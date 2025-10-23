@@ -1,13 +1,15 @@
 package com.salesforce.stepDefinition;
 
-import org.openqa.selenium.WebDriver;
 
 import com.salesforce.baseclass.Salesforce_baseclass;
 import com.salesforce.configuration.File_Reader_Manager;
 import com.salesforce.configuration.PageObjectManager;
-import com.salesforce.runnerclass.Salesforce_Runner;
 
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
 
 public class Salesforce_Stepdefiniton extends Salesforce_baseclass {
 
@@ -20,13 +22,13 @@ public class Salesforce_Stepdefiniton extends Salesforce_baseclass {
 	}
 
 	@When("user want to enter {string} the valid username")
-	public void user_want_to_enter_the_valid_username(String string) {
-		sendKeys(pom.getInstanceLogin().getUsername(), string);
+	public void user_want_to_enter_the_valid_username(String userName) {
+		sendKeys(pom.getInstanceLogin().getUsername(), userName);
 	}
 
 	@When("user want to enter {string} the valid password")
-	public void user_want_to_enter_the_valid_password(String string) {
-		sendKeys(pom.getInstanceLogin().getPassword(), string);
+	public void user_want_to_enter_the_valid_password(String password) {
+		sendKeys(pom.getInstanceLogin().getPassword(), password);
 	}
 
 	@Then("^user verify the valid username and password$")
